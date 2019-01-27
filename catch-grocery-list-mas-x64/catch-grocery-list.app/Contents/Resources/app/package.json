@@ -1,0 +1,27 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start-dev": "webpack && electron .",
+    "build-mas": "electron-packager . catch-grocery-list --platform=mas --overwrite",
+    "build-win32": "electron-packager . catch-grocery-list --platform=win32 --overwrite",
+    "build": "npm run build-mas && npm run build-win32"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-packager": "^13.0.1"
+  }
+}
