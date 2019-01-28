@@ -8,7 +8,7 @@
     "start-dev": "webpack && electron .",
     "build-mas": "electron-packager . catch-grocery-list --platform=mas --overwrite",
     "build-win32": "electron-packager . catch-grocery-list --platform=win32 --overwrite",
-    "build": "npm run build-mas && npm run build-win32"
+    "build": "webpack -p && npm run build-mas && npm run build-win32"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
